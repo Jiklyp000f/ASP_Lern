@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Weather";
+}
+
+<h2>Weather</h2>
+
+@if(ViewBag.Error != null)
+{
+    <div class="alert alert-danger">@ViewBag.Error</div>
+}
+else
+{
+    <p>@ViewBag.City</p>
+    <p>@ViewBag.Temperature °C</p>
+    <p>@ViewBag.Description</p>
+}
