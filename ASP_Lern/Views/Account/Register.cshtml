@@ -1,21 +1,41 @@
-﻿@{
-    ViewData[ "Register" ] = "Register";
-}
+﻿@model RegisterModel
 
-<h2>Register</h2>
+@{
+    ViewData[ "Title" ] = "Register";
+}
 
 <form method="post">
     <div class="mb-3">
-        <label for="username" class="form-label">Username</label>
-        <input type="text" class="form-control" id="username" name="username" placeholder="Enter username">
+        <label asp-for="Username" class="form-label">
+            @Html.DisplayNameFor( m => m.Username )
+            <span class="required">*</span>
+        </label>
+        <input asp-for="Username" class="form-control" placeholder="Enter username">
+        <span asp-validation-for="Username" class="text-danger"></span>
     </div>
+
     <div class="mb-3">
-        <label for="email" class="form-label">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+        <label asp-for="Email" class="form-label">
+            @Html.DisplayNameFor( m => m.Email )
+            <span class="required">*</span>
+        </label>
+        <input asp-for="Email" class="form-control" placeholder="name@example.com">
+        <span asp-validation-for="Email" class="text-danger"></span>
     </div>
+
     <div class="mb-3">
-        <label for="password" class="form-label">Password</label>
-        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+        <label asp-for="Password" class="form-label">
+            @Html.DisplayNameFor( m => m.Password )
+            <span class="required">*</span>
+        </label>
+        <input asp-for="Password" class="form-control" placeholder="Password">
+        <span asp-validation-for="Password" class="text-danger"></span>
     </div>
+
     <button type="submit" class="btn btn-primary">Register</button>
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 </form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

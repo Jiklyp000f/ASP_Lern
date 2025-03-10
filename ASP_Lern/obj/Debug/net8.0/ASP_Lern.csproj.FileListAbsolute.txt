@@ -36,3 +36,4 @@ C:\Users\JIKLY\source\repos\ASP_Lern\ASP_Lern\bin\Debug\net8.0\Microsoft.Extensi
 C:\Users\JIKLY\source\repos\ASP_Lern\ASP_Lern\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\JIKLY\source\repos\ASP_Lern\ASP_Lern\obj\Debug\net8.0\ASP_Lern.csproj.AssemblyReference.cache
 C:\Users\JIKLY\source\repos\ASP_Lern\ASP_Lern\obj\Debug\net8.0\ASP_Lern.csproj.Up2Date
+C:\Users\JIKLY\source\repos\ASP_Lern\ASP_Lern\obj\Debug\net8.0\ASP_Lern.sourcelink.json

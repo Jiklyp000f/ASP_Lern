@@ -20,3 +20,31 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/* Красная звёздочка */
+.required {
+    color: red;
+}
+
+/* Подсветка ошибок */
+.input-validation-error {
+    border-color: red !important;
+    box-shadow: 0 0 3px red;
+}
+
+/* Стили для сообщений об ошибках */
+.text-danger {
+    color: red;
+    font-size: 0.9em;
+}
+
+.input-validation-error {
+    border-color: red !important;
+    box-shadow: 0 0 3px red;
+}
+
+/* Подсветка звёздочки при ошибке */
+label.error .required {
+    color: red;
+    font-weight: bold;
+}

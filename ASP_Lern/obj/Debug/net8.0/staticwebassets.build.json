@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "P4xlJvQC3kASNaOegduuPVrIrtdtJMA/E9sonrv36rA=",
+  "Hash": "3q/tdKS4PkrKn3vvII9PMYk8p7UNFC7pkLB+pPvXw4A=",
   "Source": "ASP_Lern",
   "BasePath": "_content/ASP_Lern",
   "Mode": "Default",
@@ -997,8 +997,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "c2tiyv64ts",
-      "Integrity": "pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=",
+      "Fingerprint": "3izqlfvpmm",
+      "Integrity": "OzeiDDifwPJBTFCqwse25KrUaJSc0et8m1AX/2kViOs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -5957,7 +5957,7 @@
       ]
     },
     {
-      "Route": "css/site.c2tiyv64ts.css",
+      "Route": "css/site.3izqlfvpmm.css",
       "AssetFile": "C:\\Users\\JIKLY\\source\\repos\\ASP_Lern\\ASP_Lern\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5967,7 +5967,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "848"
         },
         {
           "Name": "Content-Type",
@@ -5975,11 +5975,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"OzeiDDifwPJBTFCqwse25KrUaJSc0et8m1AX/2kViOs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 10:39:58 GMT"
+          "Value": "Mon, 10 Mar 2025 18:04:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5989,7 +5989,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "c2tiyv64ts"
+          "Value": "3izqlfvpmm"
         },
         {
           "Name": "label",
@@ -5997,7 +5997,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-OzeiDDifwPJBTFCqwse25KrUaJSc0et8m1AX/2kViOs="
         }
       ]
     },
@@ -6012,7 +6012,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "362"
+          "Value": "848"
         },
         {
           "Name": "Content-Type",
@@ -6020,11 +6020,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0=\""
+          "Value": "\"OzeiDDifwPJBTFCqwse25KrUaJSc0et8m1AX/2kViOs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 10:39:58 GMT"
+          "Value": "Mon, 10 Mar 2025 18:04:22 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6034,7 +6034,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-pAGv4ietcJNk/EwsQZ5BN9+K4MuNYS2a9wl4Jw+q9D0="
+          "Value": "sha256-OzeiDDifwPJBTFCqwse25KrUaJSc0et8m1AX/2kViOs="
         }
       ]
     },
