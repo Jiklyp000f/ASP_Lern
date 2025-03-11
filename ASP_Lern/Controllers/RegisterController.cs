@@ -1,10 +1,19 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ASP_Lern.Models;
+using Microsoft.AspNetCore.Mvc;
+using BCrypt.Net;
 
 namespace ASP_Lern.Controllers;
 
 public class RegisterController : Controller
 {
-    // GET: /Register/
+    private readonly ApplicationDbContext _context;
+
+    public RegisterController( ApplicationDbContext context )
+    {
+        _context = context;
+    }
+
+    [HttpGet]
     public IActionResult Index()
     {
         return View();
@@ -13,7 +22,7 @@ public class RegisterController : Controller
     // POST: /Register/
     [HttpPost]
     [ValidateAntiForgeryToken] // Добавьте защиту от CSRF
-    public IActionResult Index( RegisterController model )
+    public async Task<IActionResult> Index( RegisterModel model )
     {
         if ( !ModelState.IsValid )
         {
@@ -21,11 +30,15 @@ public class RegisterController : Controller
             return View( model );
         }
 
-        // Логика сохранения данных (например, в БД)
-        // Пример:
-        // _context.Users.Add(new User { ... });
-        // _context.SaveChanges();
-
+        var user = new ApplicationUser
+        {
+            Username = model.Username,
+            Email = model.Email,
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword( model.Password ),
+            IsActive = true
+        };
+        _context.Users.Add( user );
+        await _context.SaveChangesAsync();
         return RedirectToAction( "Success" ); // Перенаправляем на успешную страницу
     }
 }

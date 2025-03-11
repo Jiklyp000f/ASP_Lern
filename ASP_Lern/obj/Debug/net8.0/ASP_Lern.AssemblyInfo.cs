@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASP_Lern")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a79575f6205cd2d2bea02ebf90fc40559d726fd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a77a035a1581369ff31b1bda1231d5887a2dd4c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASP_Lern")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASP_Lern")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

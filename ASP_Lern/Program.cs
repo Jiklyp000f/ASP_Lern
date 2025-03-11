@@ -1,4 +1,6 @@
+using ASP_Lern.Models;
 using ASP_Lern.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +18,8 @@ builder.Services.AddSingleton( sp => new WeatherService(
     sp.GetRequiredService<IHttpClientFactory>().CreateClient(),
     weatherApiKey
     ) );
+
+builder.Services.AddDbContext<ApplicationDbContext>( options => options.UseSqlServer( builder.Configuration.GetConnectionString( "DefaultConnection" ) ) );
 
 var app = builder.Build();
 
