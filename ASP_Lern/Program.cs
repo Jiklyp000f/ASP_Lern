@@ -1,4 +1,3 @@
-using ASP_Lern.Models;
 using ASP_Lern.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,7 +18,10 @@ builder.Services.AddSingleton( sp => new WeatherService(
     weatherApiKey
     ) );
 
-builder.Services.AddDbContext<ApplicationDbContext>( options => options.UseSqlServer( builder.Configuration.GetConnectionString( "DefaultConnection" ) ) );
+builder.Services.AddDbContext<ApplicationDbContext>( options => options.UseSqlServer( builder.Configuration.GetConnectionString( "DefaultConnection" ) )
+          .LogTo( Console.WriteLine, LogLevel.Information ) // Выводим логи в консоль
+          .EnableSensitiveDataLogging()               // Показываем чувствительные данные
+          .EnableDetailedErrors() );                  // Показываем детальные ошибки);
 
 var app = builder.Build();
 

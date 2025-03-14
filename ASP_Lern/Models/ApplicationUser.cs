@@ -18,7 +18,9 @@ public class ApplicationUser
     [Required]
     public string PasswordHash { get; set; } // Хэшированный пароль
 
+    [Required]
     public bool IsActive { get; set; } = true; // Активен ли пользователь
 
+    [Required]
     public DateTime CreatedAt { get; set; } = DateTime.UtcNow; // Дата создания
 }

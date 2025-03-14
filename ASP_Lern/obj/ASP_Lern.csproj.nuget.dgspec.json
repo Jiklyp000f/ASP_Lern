@@ -78,6 +78,10 @@
               "target": "Package",
               "version": "[10.0.0-preview.1.25080.5, )"
             },
+            "Microsoft.jQuery.Unobtrusive.Validation": {
+              "target": "Package",
+              "version": "[3.2.12, )"
+            },
             "System.Net.Http": {
               "target": "Package",
               "version": "[4.3.4, )"
@@ -85,6 +89,18 @@
             "bootstrap": {
               "target": "Package",
               "version": "[5.3.3, )"
+            },
+            "jQuery": {
+              "target": "Package",
+              "version": "[3.7.1, )"
+            },
+            "jQuery.Validation": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            },
+            "jQuery.Validation.Unobtrusive": {
+              "target": "Package",
+              "version": "[2.0.20710, )"
             }
           },
           "imports": [
